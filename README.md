@@ -13,7 +13,10 @@ Job.is(AI 커리어 큐레이션 서비스)의 **IT/개발 채용공고 데이�
 ├── extractor/    ← 데이터팀용: 수집/추출 파이프라인 (Python stdlib only, 무설치)
 │   ├── scripts/  (wanted · jobkorea_company · build_pool · shard_extract · merge_shards · skill_enrich)
 │   └── README.md · EXTRACTION_GUIDE.md · schema.sql
-└── proposal/     ← 기획 문서 (서비스 정의 · 문제정의 · PRD · IA · 최종발표)
+├── proposal/     ← 기획 문서 (서비스 정의 · 문제정의 · PRD · IA · 최종발표)
+└── visioning/    ← 화면 시안 (와이어프레임 · 예시 목업, HTML)
+    ├── wireframe.html    (Lo-fi 와이어프레임 보드)
+    └── mockup_v1.html    (예시 목업 — 오늘의 추천)
 ```
 
 | 폴더 | 대상 | 내용 | 시작점 |
@@ -21,6 +24,7 @@ Job.is(AI 커리어 큐레이션 서비스)의 **IT/개발 채용공고 데이�
 | **database/** | 백엔드팀 | 데이터를 Postgres에 적재해 서비스에 사용 | `database/README.md` |
 | **extractor/** | 수집/데이터팀 | 파이프라인을 돌려 데이터를 생산·갱신 | `extractor/README.md` |
 | **proposal/** | 전체 | Job.is 기획 의도·요구사항·정보구조 | `proposal/INDEX.md` |
+| **visioning/** | 전체 | 화면 와이어프레임·예시 목업 (브라우저로 열기) | `visioning/wireframe.html` |
 
 ## 데이터 스냅샷
 
