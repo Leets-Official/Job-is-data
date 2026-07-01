@@ -3,22 +3,24 @@
 Job.is(AI 커리어 큐레이션 서비스)의 **IT/개발 채용공고 데이터셋**과 그것을 생산하는 **수집 파이프라인**.
 원티드(공고 본체) + 잡코리아(기업 메타 보강) 아키텍처.
 
-## 구성 — 두 패키지
+## 구성
 
 ```
 .
 ├── database/     ← 백엔드용: 바로 적재 가능한 PostgreSQL 데이터셋
 │   ├── schema.sql · load.py · data/*.jsonl
 │   └── README.md · DATA_DICTIONARY.md
-└── extractor/    ← 데이터팀용: 수집/추출 파이프라인 (Python stdlib only, 무설치)
-    ├── scripts/  (wanted · jobkorea_company · build_pool · shard_extract · merge_shards · skill_enrich)
-    └── README.md · EXTRACTION_GUIDE.md · schema.sql
+├── extractor/    ← 데이터팀용: 수집/추출 파이프라인 (Python stdlib only, 무설치)
+│   ├── scripts/  (wanted · jobkorea_company · build_pool · shard_extract · merge_shards · skill_enrich)
+│   └── README.md · EXTRACTION_GUIDE.md · schema.sql
+└── proposal/     ← 기획 문서 (서비스 정의 · 문제정의 · PRD · IA · 최종발표)
 ```
 
-| 패키지 | 대상 | 하는 일 | 시작점 |
+| 폴더 | 대상 | 내용 | 시작점 |
 |---|---|---|---|
 | **database/** | 백엔드팀 | 데이터를 Postgres에 적재해 서비스에 사용 | `database/README.md` |
 | **extractor/** | 수집/데이터팀 | 파이프라인을 돌려 데이터를 생산·갱신 | `extractor/README.md` |
+| **proposal/** | 전체 | Job.is 기획 의도·요구사항·정보구조 | `proposal/INDEX.md` |
 
 ## 데이터 스냅샷
 

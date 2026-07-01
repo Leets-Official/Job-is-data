@@ -11,5 +11,8 @@ venv/
 extractor/scripts/out/
 *.bak
 
+# 툴링 세션 상태(하네스) — 절대 커밋 금지
+.omc/
+
 # OS/에디터
 .DS_Store
