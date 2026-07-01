@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 로컬 시크릿 (.env.example 는 커밋)
+.env
+
+# 추출 산출물(재생성 가능) — database/data 의 커밋 데이터는 제외 안 함
+extractor/scripts/out/
+*.bak
+
+# OS/에디터
+.DS_Store
